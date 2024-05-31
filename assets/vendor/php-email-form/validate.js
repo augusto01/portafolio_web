@@ -8,6 +8,8 @@
 
   let forms = document.querySelectorAll('.php-email-form');
 
+
+
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
       event.preventDefault();
@@ -78,7 +80,21 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+   /* thisForm.querySelector('.error-message').innerHTML = error;*/
+   
+   let name = document.querySelector('#name');
+   let email = document.querySelector('#email');
+   let subject = document.querySelector('#subject');
+   let message = document.querySelector('#message');
+
+   email.value = '';
+   name.value = '';
+   subject.value = '';
+   message.value = '';
+
+
+   
+    
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
