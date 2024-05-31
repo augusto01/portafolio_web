@@ -86,7 +86,7 @@
    let email = document.querySelector('#email');
    let subject = document.querySelector('#subject');
    let message = document.querySelector('#message');
-
+    
    email.value = '';
    name.value = '';
    subject.value = '';
