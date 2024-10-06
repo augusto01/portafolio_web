@@ -24,7 +24,7 @@
 
   document.getElementById('download-btn').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'Resources/curriculum_nuevo.pdf';
+    link.href = 'Resources/augustodevcv2024.pdf';
     link.download = 'AlmironPedroAugusto_CV';
     document.body.appendChild(link);
     link.click();
